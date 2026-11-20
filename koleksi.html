@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koleksi Buku | Pustaka Digital</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar"><div class="container nav-inner">
+  <a href="index.html" class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>Pustaka Digital</a>
+  <button class="burger" id="burger" aria-label="Buka menu">&#9776;</button>
+  <ul class="menu" id="menu">
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="koleksi.html" class="aktif">Koleksi Buku</a></li>
+    <li><a href="tentang.html" >Tentang Kami</a></li>
+  </ul>
+</div></header>
+<main>
+<div class="page-title"><div class="container">
+  <h1>Koleksi Buku</h1><p class="sub" style="margin:0">Cari berdasarkan judul, penulis, atau kategori.</p>
+</div></div>
+<section><div class="container">
+  <form class="cari cari-koleksi" id="formCari" role="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input type="search" id="cari" placeholder="Cari judul, penulis, atau kategori..." aria-label="Cari buku">
+    <button class="btn" type="submit">Cari</button>
+  </form>
+  <div class="filter" role="group" aria-label="Filter kategori">
+    <button class="chip aktif" data-kat="Semua">Semua</button>
+    <button class="chip" data-kat="Teknologi">Teknologi</button>
+    <button class="chip" data-kat="Pendidikan">Pendidikan</button>
+    <button class="chip" data-kat="Bisnis">Bisnis</button>
+    <button class="chip" data-kat="Novel">Novel</button>
+    <button class="chip" data-kat="Sejarah">Sejarah</button>
+    <button class="chip" data-kat="Administrasi Negara">Administrasi Negara</button>
+
+  </div>
+  <div class="buku-grid" id="daftarBuku"></div>
+  <p class="kosong" id="kosong">Buku tidak ditemukan. Coba kata kunci atau kategori lain.</p>
+</div></section>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mJudul">
+  <div class="modal-box">
+    <button class="tutup" id="tutup" aria-label="Tutup">&times;</button>
+    <div class="m-sampul" id="mSampul"></div>
+    <div class="modal-teks">
+      <h2 id="mJudul"></h2>
+      <dl id="mInfo"></dl>
+      <p id="mSinopsis"></p>
+    </div>
+  </div>
+</div>
+<footer><div class="container">
+  <div class="footer-grid">
+    <div><h3>Pustaka Digital</h3><p>Perpustakaan digital untuk menemukan dan membaca informasi buku dengan mudah.</p></div>
+    <div><h3>Kontak</h3><p>Email: fadilapratiwiw@gmail.com<br>Telepon: (083871921055)<br>Grand Pesona Cilegon Jln. Jayanegara V, Blok G6/10, Mangkunegara, Bojonegara, Kab. Serang, Banten, 42454</p></div>
+  </div>
+  <p class="copy">&copy; 2026 Pustaka Digital. Proyek tugas kuliah Desain Website.</p>
+</div></footer>
+<script src="script.js"></script> 
+</body></html>
